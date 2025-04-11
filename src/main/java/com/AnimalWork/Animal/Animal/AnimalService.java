@@ -17,27 +17,31 @@ public class AnimalService {
     }
 
     // Fetch and return unique Animal
-    public Object getAnimalsByID(int animalID) {
+//    public Object getAnimalsByID(int animalID) {
+//        return animalRepository.getAnimalByID(animalID);
+//    }
+
+    public Animal getAnimalsByID(int animalID) {
         return animalRepository.getAnimalByID(animalID);
     }
 
     // Fetch and return Animal Name
-    public Object getAnimalByName(String name) {
+    public List<Animal> getAnimalByName(String name) {
         return animalRepository.getAnimalByName(name);
     }
 
     // Fetch and return Animal origin
-    public Object getAnimalByOrigin(String origin) {
+    public List<Animal> getAnimalByOrigin(String origin) {
         return animalRepository.getAnimalByOrigin(origin);
     }
 
     // Fetch and return Animal Lifespan
-    public Object getAnimalByLifespan(int lifespan) {
+    public List<Animal> getAnimalByLifespan(int lifespan) {
         return animalRepository.getAnimalByLifespan(lifespan);
     }
 
     // Fetch and return Animal description
-    public Object getAnimalByDescription(String description){
+    public List<Animal> getAnimalByDescription(String description){
         return animalRepository.getAnimalByDescription(description);
     }
 

@@ -8,7 +8,7 @@ import java.util.List;
 @Repository
 public interface AnimalRepository extends JpaRepository<Animal, Integer> {
 
-    List<Animal> getAnimalByID(int animalID);
+    Animal getAnimalByID(int animalID);
 
     List<Animal> getAnimalByName(String name);
 
